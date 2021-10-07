@@ -22,7 +22,7 @@
       <div class="header__offcanvas">
        <nav class="navbar navbar-light navbar-expand-lg bg-light">
           <div class="container-fluid">
-            <img id="logo" src="../Images/1x/logo.png">
+            <img id="logo" src="../Images/1x/Logo.png">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -69,13 +69,79 @@
     
     <div class="principal">
 
-         
+      <div class="contacto">
 
-          <div class="principal__organizacion--Whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=toscana">
-              <img id="wppLogo" class="animate__animated animate__bounce" src="../Images/wpp.png">
-            </a>
-          </div>
+        <div class="contacto__tipo">
+
+            <div class="contacto__tipo--arquitectura">
+            <a href="Error404.html"><img src="../Images/contacto/Arquitectura.png"></a>  <!--futura imagen-->
+            <h1>ARQUITECTURA</h1>
+            </div>
+
+            <div class="contacto__tipo--interiorismo">
+              <a href="Error404.html"><img src="../Images/contacto/Interiorismo.png"></a>  <!--futura imagen-->
+              <h1>INTERIORISMO</h1>
+              </div>
+
+        </div>
+
+        <div class="contacto__formulario">
+            <form class="contacto__formulario--form" action="" method="">
+
+                <!--Nombre-->
+                <div class="partes">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre">
+                </div>
+
+                <!--Apellido-->
+                <div class="partes">
+                  <label for="apellido">Apellido:</label>
+                  <input type="text" id="apellido">
+                </div>
+
+                <!--Mail-->
+                <div class="partes">
+                  <label for="mail">Mail:</label>
+                  <input type="text" id="mail">
+                </div>
+
+                <!--tipo de consumidor-->
+                <div class="partes">
+                  <b>Consumidor</b>
+                  <select name="" id="">
+                      <option value="">Mayorista</option>
+                      <option value="">Minorista</option>
+                  </select>
+                </div>
+
+                <!--Consulta-->
+                <div class="partes">
+                  <label for="consulta">Consulta:</label>
+                  <textarea name="" id="consulta" cols="25" rows="5"> </textarea>
+                </div>
+
+                <!--Chebox-->
+                <div class="partes">
+                  <label for="promo">Deseo recibir Novedades y Promociones:</label>
+                  <input type="checkbox" id="promo"> 
+                </div>
+
+                <!--Botonera-->
+                <div class="partes">
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+    </div>   
+
+      <div class="principal__organizacion--Whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=toscana">
+          <img id="wppLogo" class="animate__animated animate__bounce" src="../Images/wpp.png">
+        </a>
+      </div>
 
     </div>
 

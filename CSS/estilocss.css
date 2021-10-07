@@ -35,7 +35,8 @@
   .tienda p {
     font-size: 15px; }
   .tienda img {
-    width: 180px; }
+    width: 180px;
+    border-radius: 20px; }
   .tienda__aside {
     width: 25%;
     display: flex;
@@ -94,6 +95,101 @@
     width: 300px; }
   .tienda p {
     font-size: larger; } }
+
+.SeccionPrincipal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .SeccionPrincipal__arquitectura, .SeccionPrincipal__interiorismo {
+    position: relative;
+    text-align: center; }
+    .SeccionPrincipal__arquitectura p, .SeccionPrincipal__interiorismo p {
+      background-color: rgba(255, 255, 255, 0.6);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; }
+    .SeccionPrincipal__arquitectura h1, .SeccionPrincipal__interiorismo h1 {
+      position: absolute;
+      top: 2%;
+      right: 2%; }
+  .SeccionPrincipal__nosotros {
+    border: 1px solid #d39243;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(214, 175, 127, 0.6);
+    font-weight: 600; }
+  .SeccionPrincipal__categorias {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .SeccionPrincipal__categorias img {
+      border-radius: 10px;
+      width: 350px;
+      height: auto;
+      margin: 10px auto 20px auto; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+  .contacto__tipo {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .contacto__tipo--arquitectura, .contacto__tipo--interiorismo {
+      width: 300px;
+      height: auto;
+      border: 1px solid black;
+      position: relative;
+      text-align: center;
+      margin: 20px;
+      border-radius: 10px; }
+      .contacto__tipo--arquitectura img, .contacto__tipo--interiorismo img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px; }
+      .contacto__tipo--arquitectura h1, .contacto__tipo--interiorismo h1 {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 25px; }
+    .contacto__tipo--interiorismo :hover, .contacto__tipo--arquitectura :hover {
+      animation-duration: 1s;
+      animation-name: zoomear; }
+  .contacto__formulario {
+    width: 80%;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center; }
+    .contacto__formulario--form {
+      font-weight: 600;
+      display: inline-block;
+      background-color: #ddc4a3;
+      border-radius: 10px; }
+      .contacto__formulario--form .partes {
+        margin: 5px; }
+
+@media only screen and (min-width: 768px) {
+  .contacto__formulario--form {
+    width: 80%; } }
+
+@media only screen and (min-width: 1100px) {
+  .contacto__tipo--arquitectura, .contacto__tipo--interiorismo {
+    width: 450px; } }
 
 body {
   background-color: bisque; }

@@ -1,0 +1,90 @@
+.contacto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    &__tipo {
+        
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        &--arquitectura, &--interiorismo{
+            width: 300px;
+            height: auto;
+            border: 1px solid black;
+            position: relative;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 10px;
+            }
+            h1 {
+                position: absolute;
+                bottom: 2%;
+                right: 2%;
+                background-color: rgba(255, 255 ,255 ,0.5);
+                font-size: 25px;
+            }
+        }
+
+
+        &--interiorismo, &--arquitectura {
+            :hover {
+                animation-duration: 1s;
+                animation-name: zoomear;
+            }
+        }
+
+    }
+
+    &__formulario {
+        width: 80%;
+        height: fit-content;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+
+        &--form {
+            font-weight: 600;
+            display: inline-block;
+            background-color: rgb(221, 196, 163);
+            border-radius: 10px;
+            .partes {
+                margin: 5px;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 768px) { 
+    .contacto__formulario {
+
+        &--form {
+        width: 80%;
+    }
+
+    }
+    
+    
+}
+
+@media only screen and (min-width: 1100px) {
+    .contacto {
+    
+        &__tipo {
+    
+            &--arquitectura, &--interiorismo{
+                width: 450px;
+                
+            }
+        }
+    }
+}
