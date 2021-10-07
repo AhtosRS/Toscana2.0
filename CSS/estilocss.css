@@ -1,3 +1,4 @@
+/*---------------------Index-----------------------*/
 .container-fluid {
   background-color: #d6af7f; }
 
@@ -13,6 +14,86 @@
 
 .dropdown-menu {
   background-color: bisque; }
+
+/*---------------------Productos-----------------------*/
+.modal-content {
+  background-color: #d6af7f; }
+
+.modal-footer button {
+  color: black;
+  border: 1px solid black; }
+
+.modal-footer .btn {
+  background-color: bisque; }
+
+.tienda {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  border: 1px solid black;
+  margin: auto; }
+  .tienda p {
+    font-size: 15px; }
+  .tienda img {
+    width: 180px; }
+  .tienda__aside {
+    width: 25%;
+    display: flex;
+    background-color: burlywood;
+    flex-direction: column; }
+    .tienda__aside--filtros {
+      height: 5%;
+      background-color: #ecbf83; }
+    .tienda__aside--titulo {
+      height: auto;
+      width: 100%;
+      background-color: #ecbf83;
+      display: flex;
+      justify-content: center;
+      font-size: 25px; }
+    .tienda__aside--categorias {
+      height: auto;
+      width: 100%;
+      background-color: burlywood;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 20px; }
+    .tienda__aside--categorias p:hover {
+      background-color: #dfa65c; }
+    .tienda__aside a {
+      color: black;
+      text-decoration: none; }
+  .tienda__productos {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: #ecbf83; }
+    .tienda__productos--muestra {
+      background-color: #ddc4a3;
+      text-align: center;
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      .tienda__productos--muestra img {
+        border: 1px solid black;
+        background-color: burlywood; }
+      .tienda__productos--muestra img:hover {
+        animation-duration: 1s;
+        animation-name: zoomear; }
+    .tienda__productos--filas {
+      margin: 10%; }
+
+@media only screen and (max-width: 768px) {
+  .tienda__aside {
+    width: 40%; } }
+
+@media only screen and (min-width: 768px) {
+  .tienda img {
+    width: 300px; }
+  .tienda p {
+    font-size: larger; } }
 
 body {
   background-color: bisque; }
