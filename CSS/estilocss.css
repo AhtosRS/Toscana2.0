@@ -1,7 +1,6 @@
 /*---------------------Index-----------------------*/
 .container-fluid {
-  background-color: #d6af7f;
-  flex-wrap: nowrap; }
+  background-color: #d6af7f; }
 
 .navbar {
   padding: 0;
