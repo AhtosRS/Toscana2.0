@@ -8,7 +8,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 40px auto auto;
     grid-template-areas: "header header header header header"
                         "main main main main main"
                         "footer footer footer footer footer";
@@ -27,21 +27,36 @@ header {
     grid-area: main;
     background-color: bisque;
     margin-top: 10px;
+    margin-bottom: 30px;
     &__organizacion--fotos {
-        display: flex;
-        margin: 10px auto 10px auto;
+        margin: 10px auto 0px auto;
         flex-wrap: wrap;
         justify-content: center;
         max-width: 400px;
-        .textos {
-            height: 150px;
-            width: 150px;
-            margin: 10px;
+        .texto {
+            display: flex;
+            height: 200px;
+            width: auto;
+            margin: 10px 20px 10px 20px;
+            align-items: center;
             text-align: center;
         }
-        img {
-            width: 150px;
+        .imagen {
+            position: relative;
+            text-align: center;
+            img {
+                height: 300px;
+                width: auto;
+            }
+            .texto_imagen {
+                background-color: rgba(255, 255, 255, 0.4);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
+        
     }
     &__organizacion--Whatsapp {
 
@@ -68,6 +83,11 @@ footer {
         flex-direction: column;
         flex-grow: 2;
         margin: 10px 0 0 5px;
+        padding: 5px;
+        a {
+            color: black;
+            text-decoration: none;
+        }
         &__localizacion {
             display: flex;
             flex-direction: row;
@@ -106,19 +126,22 @@ footer {
 
 @media only screen and (min-width: 768px) { 
 
+    .grid {
+        grid-template-rows: auto auto auto;
+    }
+
     .principal__organizacion--fotos {
         max-width: 700px;
-        .textos {
-            height: 250px;
-            width: 250px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
+        .texto {
+            font-size: larger;
         }
-        img {
-            width: 250px;
+        .imagen {
+            img {
+                height: 500px;
+            }  
         }
+        
+        
     }
 }
 
@@ -132,22 +155,24 @@ footer {
     }
     
     .principal__organizacion--fotos {
-        max-width: 1100px;
-        .textos {
-            height: 250px;
-            width: 250px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
-            font-size: 20px;
+        
+        .texto {
+            font-size: larger;
+            height: 200px;
+            
+            p {
+                background-color: rgba(214, 175, 127, 0.6);
+            }
+            
         }
-        img {
-            width: 250px;
+        .imagen {
+            font-size: larger;
+            img {
+                height: 700px;
+            }  
         }
     }
 }
-
 @keyframes zoomear {
     0% {
         transform: scale(1);
